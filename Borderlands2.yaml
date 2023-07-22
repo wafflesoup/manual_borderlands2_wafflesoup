@@ -1,0 +1,130 @@
+name: WafflePandora
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Manual_Borderlands2_Wafflesoup Template
+
+game: Manual_Borderlands2_Wafflesoup
+requires:
+  version: 0.4.1 # Version of Archipelago required for this yaml to work as expected.
+
+Manual_Borderlands2_Wafflesoup:
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    0: 0
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  starting_manufacturer:
+    bandit: 1
+    dahl: 1
+    hyperion: 1
+    jakobs: 1
+    mailwan: 1 
+    tediore: 1
+    torgue: 1
+    vladof: 1
+
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+    
+  triggers:
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: bandit
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Bandit Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: dahl
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Dahl Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: hyperion
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Hyperion Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: jakobs
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Jakobs Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: maliwan
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Maliwan Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: tediore
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Tediore Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: torgue
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Torgue Guns: 1
+    - option_category: Manual_Borderlands2_Wafflesoup
+      option_name: starting_manufacturer
+      option_result: vladof
+      options:
+        Manual_Borderlands2_Wafflesoup:
+          start_inventory:
+            Vladof Guns: 1
+
