@@ -1,15 +1,11 @@
-from Options import FreeText
-from BaseClasses import MultiWorld
-from typing import Union
+from Options import FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, SpecialRange
 
-manual_options = {}
+from .hooks.Options import before_options_defined, after_options_defined
 
-def is_option_enabled(world: MultiWorld, player: int, name: str) -> bool:
-    return get_option_value(world, player, name) > 0
 
-def get_option_value(world: MultiWorld, player: int, name: str) -> Union[int, dict]:
-    option = getattr(world, name, None)
-    if option == None:
-        return 0
 
-    return option[player].value
+manual_options = before_options_defined({})
+
+# Manual can do things to define options here, though it doesn't currently
+
+manual_options = after_options_defined(manual_options)

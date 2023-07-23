@@ -1,6 +1,10 @@
 from BaseClasses import Item
 from .Data import item_table, progressive_item_table
 from .Game import filler_item_name, starting_index
+from .hooks.Items import before_item_table_processed, before_progressive_item_table_processed
+
+item_table = before_item_table_processed(item_table)
+progressive_item_table = before_progressive_item_table_processed(progressive_item_table)
 
 ######################
 # Generate item lookups
@@ -14,9 +18,10 @@ lastItemId = -1
 count = starting_index
 
 # add the filler item to the list of items for lookup
-item_table.append({
-    "name": filler_item_name
-})
+if filler_item_name:
+    item_table.append({
+        "name": filler_item_name
+    })
 
 # add sequential generated ids to the lists
 for key, val in enumerate(item_table):

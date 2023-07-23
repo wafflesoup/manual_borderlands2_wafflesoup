@@ -1,3 +1,127 @@
 {
-
+	"Southern Shelf": 
+	{
+		"starting": false,
+		"connects_to": [],
+		"requires": []
+	},
+	"Southern Shelf Bay": 
+	{
+		"connects_to": [],
+		"requires": "Southern Shelf Bay"
+	},
+	"Three Horns Divide": 
+	{
+		"connects_to": [],
+		"requires": "Three Horns Divide"
+	},
+	"Frostburn Canyon": 
+	{
+		"connects_to": [],
+		"requires": "Frostburn Canyon"
+	},
+	"Caustic Caverns & Santuary Hole": 
+	{
+		"connects_to": [],
+		"requires": "Caustic Caverns & Santuary Hole"
+	},
+	"Tundra Express & End of the Line": 
+	{
+		"connects_to": [],
+		"requires": "Tundra Express & End of the Line"
+	},
+	"Three Horns Valley": 
+	{
+		"connects_to": [],
+		"requires": "Three Horns Valley"
+	},
+	"Bloodshot Stronghold": 
+	{
+		"connects_to": [],
+		"requires": "Bloodshot Stronghold"
+	},
+	"Bloodshot Ramparts": 
+	{
+		"connects_to": [],
+		"requires": "Bloodshot Ramparts"
+	},
+	"Southpaw Steam & Power": 
+	{
+		"connects_to": [],
+		"requires": "Southpaw Steam & Power"
+	},
+	"The Fridge": 
+	{
+		"connects_to": [],
+		"requires": "The Fridge"
+	},
+	"Highlands Outwash": 
+	{
+		"connects_to": [],
+		"requires": "Highlands Outwash"
+	},
+	"The Highlands & The Holy Spirits": 
+	{
+		"connects_to": [],
+		"requires": "The Highlands & The Holy Spirits"
+	},
+	"Wildlife Exploitation Preserve & Natural Selection Annex": 
+	{
+		"connects_to": [],
+		"requires": "Wildlife Exploitation Preserve & Natural Selection Annex"
+	},
+	"Opportunity": 
+	{
+		"connects_to": [],
+		"requires": "Opportunity"
+	},
+	"Thousand Cuts": 
+	{
+		"connects_to": [],
+		"requires": "Thousand Cuts"
+	},
+	"The Bunker": 
+	{
+		"connects_to": [],
+		"requires": "The Bunker"
+	},
+	"Terramorphous Peak": 
+	{
+		"connects_to": [],
+		"requires": "Terramorphous Peak"
+	},
+	"The Dust & Friendship Gulag": 
+	{
+		"connects_to": [],
+		"requires": "The Dust & Friendship Gulag"
+	},
+	"Lynchwood": 
+	{
+		"connects_to": [],
+		"requires": "Lynchwood"
+	},
+	"Eridium Blight": 
+	{
+		"connects_to": [],
+		"requires": "Eridium Blight"
+	},
+	"Sawtooth Cauldron": 
+	{
+		"connects_to": [],
+		"requires": "Sawtooth Cauldron"
+	},
+	"Arid Nexus Boneyard": 
+	{
+		"connects_to": [],
+		"requires": "Arid Nexus Boneyard"
+	},
+	"Arid Nexus Badlands": 
+	{
+		"connects_to": [],
+		"requires": "Arid Nexus Badlands"
+	},
+	"Hero's Pass": 
+	{
+		"connects_to": [],
+		"requires": "Hero's Pass"
 }
