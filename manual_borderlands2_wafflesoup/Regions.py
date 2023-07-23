@@ -2,6 +2,7 @@ from BaseClasses import Entrance, MultiWorld, Region
 from .Data import region_table
 from .Locations import ManualLocation
 from ..AutoWorld import World
+from .hooks.Regions import before_region_table_processed
 
 if not region_table:
     region_table = {}
@@ -16,6 +17,8 @@ regionMap["Manual"] = {
     "requires": [],
     "connects_to": starting_regions
 }
+
+regionMap = before_region_table_processed(regionMap)
 
 def create_regions(base: World, world: MultiWorld, player: int): 
     # Create regions and assign locations to each region

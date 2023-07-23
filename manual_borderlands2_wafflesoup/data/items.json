@@ -1,261 +1,302 @@
 [
- {
-   "name": "SMG",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Shotguns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Assault Rifles",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Sniper Rifles",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Rocket Launchers",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Green Rarity",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Blue Rarity",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Purple Rarity",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "E-tech Rarity",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Orange Rarity",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Bandit Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Dahl Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Hyperion Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Jakobs Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Maliwan Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Tediore Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Torgue Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Vladof Guns",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Skill point",
-   "category": "Skill",
-   "progression": true,
-   "count": 68
- },
- {
-   "name": "Sawtooth Cauldron",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Eridium Blight",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Arid Nexus Badlands",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Arid Nexus Boneyard",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Lynchwood",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "The Dust & Friendship Gulag",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Bloodshot Stronghold",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Bloodshot Ramparts",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Hero's Pass",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Vault of The Warrior",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Tundra Express & End of the Line",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Caustic Caverns & Santuary Hole",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Terramorphous Peak",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Thousand Cuts",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "The Highlands & The Holy Spirits",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Highlands Outwash",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "The Fridge",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Three Horns Valley",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Three Horns Divide",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Frostburn Canyon",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Southern Shelf Bay",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "The Bunker",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Opportunity",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Wildlife Exploitation Preserve & Natural Selection Annex",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Southpaw Steam Power",
-   "category": "Map",
-   "progression": true
- },
- {
-   "name": "Light Runner",
-   "category": "Vehicle",
-   "useful": true
- },
- {
-   "name": "Bandit Technical",
-   "category": "Vehicle",
-   "useful": true
- },
- {
-   "name": "Grenades",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Relic",
-   "category": "Weapon",
-   "useful": true
- },
- {
-   "name": "Character Head",
-   "category": "Junk",
-   "junk": true,
-   "count": 1 
- },
- {
-   "name": "Character Skin",
-   "category": "Junk",
-   "junk": true,
-   "count": 1 
- },
- {
-   "name": "Vehicle Skin",
-   "category": "Junk",
-   "junk": true,
-   "count": 1 
- }
+	{
+		"name": "SMG",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Shotguns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Assault Rifles",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Sniper Rifles",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Rocket Launchers",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Green Rarity",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Blue Rarity",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Purple Rarity",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "E-tech Rarity",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Orange Rarity",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Bandit Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Dahl Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Hyperion Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Jakobs Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Maliwan Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Tediore Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Torgue Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Vladof Guns",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Skill point",
+		"category": ["Skill"],
+		"count": 68,
+		"progression": true
+	},
+	{
+		"name": "Sawtooth Cauldron",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Eridium Blight",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Arid Nexus Badlands",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Arid Nexus Boneyard",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Lynchwood",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "The Dust & Friendship Gulag",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Bloodshot Stronghold",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Bloodshot Ramparts",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Hero's Pass",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Vault of The Warrior",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Tundra Express & End of the Line",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Caustic Caverns & Santuary Hole",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Terramorphous Peak",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Thousand Cuts",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "The Highlands & The Holy Spirits",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Highlands Outwash",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "The Fridge",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Three Horns Valley",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Three Horns Divide",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Frostburn Canyon",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Southern Shelf & Windshear Waste",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Southern Shelf Bay",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "The Bunker",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Opportunity",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Wildlife Exploitation Preserve & Natural Selection Annex",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Southpaw Steam & Power",
+		"category": ["Map"],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Grenades",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Relic",
+		"category": ["Weapon"],
+		"count": 1,
+		"useful": true
+	},
+	{
+		"name": "Character Head",
+		"category": ["Junk"],
+		"count": 1,
+		"filler": true
+	},
+	{
+		"name": "Character Skin",
+		"category": ["Junk"],
+		"count": 1,
+		"filler": true
+	},
+	{
+		"name": "Vehicle Skin",
+		"category": ["Junk"],
+		"count": 1,
+		"filler": true
+	}
 ]

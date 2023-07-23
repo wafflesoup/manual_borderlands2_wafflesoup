@@ -140,6 +140,10 @@ def set_rules(base: World, world: MultiWorld, player: int):
         if not area:
             return True
         
+        # don't require the "requires" key for locations and regions if they don't need to use it
+        if "requires" not in area.keys():
+            return True
+        
         if isinstance(area["requires"], str):
             return checkRequireStringForArea(state, area)
         else:  # item access is in dict form

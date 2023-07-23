@@ -159,6 +159,9 @@ class DataValidation():
             if "progression" in item and item["progression"]:
                 continue
 
+            if "progression_skip_balancing" in item and item["progression_skip_balancing"]:
+                continue
+
             # check location requires for the presence of item name
             for location in DataValidation.location_table:
                 if "requires" not in location:
@@ -181,7 +184,7 @@ class DataValidation():
                 region_requires = json.dumps(region["requires"])
 
                 if item["name"] in region_requires:
-                    raise ValidationError("Item %s is required by region %s, but the item is not marked as progression." % (item["name"], key))
+                    raise ValidationError("Item %s is required by region %s, but the item is not marked as progression." % (item["name"], region_name))
 
     @staticmethod
     def checkRegionsConnectingToOtherRegions():
@@ -203,3 +206,49 @@ class DataValidation():
 
         if victory_count > 1:
             raise ValidationError("There are %s victory locations defined, but there should only be 1." % (str(victory_count)))
+        
+    @staticmethod
+    def checkForDuplicateItemNames():
+        for item in DataValidation.item_table:
+            name_count = len([i for i in DataValidation.item_table if i["name"] == item["name"]])
+
+            if name_count > 1:
+                raise ValidationError("Item %s is defined more than once." % (item["name"]))
+
+    @staticmethod
+    def checkForDuplicateLocationNames():
+        for location in DataValidation.location_table:
+            name_count = len([l for l in DataValidation.location_table if l["name"] == location["name"]])
+
+            if name_count > 1:
+                raise ValidationError("Location %s is defined more than once." % (location["name"]))
+
+    @staticmethod
+    def checkForDuplicateRegionNames():
+        # this currently does nothing because the region name is a dict key, which will never be non-unique / limited to 1
+        for region_name in DataValidation.region_table:
+            name_count = len([r for r in DataValidation.region_table if r == region_name])
+
+            if name_count > 1:
+                raise ValidationError("Region %s is defined more than once." % (region_name))
+            
+    @staticmethod
+    def checkStartingItemsForValidItemsAndCategories():
+        if "starting_items" not in DataValidation.game_table:
+            return
+        
+        starting_items = DataValidation.game_table["starting_items"]
+
+        for starting_block in starting_items:
+            if "items" in starting_block and "item_categories" in starting_block:
+                raise ValidationError("One of your starting item definitions has both 'items' and 'item_categories' defined, but only one will be applied.")
+
+            if "items" in starting_block:
+                for item_name in starting_block["items"]:
+                    if not item_name in [item["name"] for item in DataValidation.item_table]:
+                        raise ValidationError("Item %s is set as a starting item, but is misspelled or is not defined." % (item_name))
+            
+            if "item_categories" in starting_block:
+                for category_name in starting_block["item_categories"]:
+                    if len([item for item in DataValidation.item_table if "category" in item and category_name in item["category"]]) == 0:
+                        raise ValidationError("Item category %s is set as a starting item category, but is misspelled or is not defined on any items." % (category_name))
