@@ -741,31 +741,31 @@
 	{
 		"name": "Red Chest 1 Bloodshot Stronghold",
 		"region": "Bloodshot Stronghold",
-		"category": [],
+		"category": ["Chest"],
 		"requires": []
 	},
 	{
 		"name": "Red Chest 2 Bloodshot Stronghold",
 		"region": "Bloodshot Stronghold",
-		"category": [],
+		"category": ["Chest"],
 		"requires": []
 	},
 	{
 		"name": "Red Chest 3 Bloodshot Stronghold",
 		"region": "Bloodshot Stronghold",
-		"category": [],
+		"category": ["Chest"],
 		"requires": []
 	},
 	{
 		"name": "Red Chest 1 Bloodshot Ramparts",
 		"region": "Bloodshot Ramparts",
-		"category": [],
+		"category": ["Chest"],
 		"requires": []
 	},
 	{
 		"name": "Red Chest 2 Bloodshot Ramparts",
 		"region": "Bloodshot Ramparts",
-		"category": [],
+		"category": ["Chest"],
 		"requires": []
 	}
 ]
